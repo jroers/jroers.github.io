@@ -1,5 +1,4 @@
 $(document).ready(function() {
-	console.log("JS is working!");
 	$(function() {
 		$('a[href*="#"]:not([href="#"])').click(function() {
 	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
