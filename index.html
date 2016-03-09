@@ -14,6 +14,7 @@
 
   <!-- Fonts -->
   <link href='https://fonts.googleapis.com/css?family=Quicksand:400,300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
 
   <link rel="shortcut icon" href="./public/images/favicon.ico">
 	<title>Joe Roers</title>
@@ -23,12 +24,12 @@
 		<h1 class="centered">JOE ROERS</h1>
 		<div class="col-md-8 col-xs-12 bio">
 			<div class="row">
-				<div class="col-md-4 col-xs-12 centered">
+				<div class="col-md-4 col-xs-12 col-sm-12 centered">
 					<img id="profile-photo" src="./public/images/profile-photo.jpg">
 				</div>
-				<div class="col-md-8 col-xs-12 tagline-body">
-					<p class="tagline">I'm a full-stack web developer with a particular interest in Healthcare and Education.<br>Have a project that you'd like some help with?<br>
-					<a href="mailto:joe.roers@gmail.com">Let's talk!</a></p>
+				<div class="col-md-8 col-xs-12 col-sm-12 tagline-body">
+					<p class="tagline">I'm a full-stack web developer with a particular interest in the healthcare and education industries.<br>Have a project that you'd like some help with?<br>
+					<a href="#projects">Let's talk!</a></p>
 				</div>
 			</div>
 			<div class="row links">
@@ -39,23 +40,60 @@
 		</div>	
 	</div>
 	<div class="container" id="projects">
-		This is where my projects will go
-		<div class="row">
-			<div class="col-md-6 project centered">
-				Lorem Ipsum
+		<h1>PROJECTS</h1>
+		<div class="row project" id="sangrouge">
+			<h2 class="centered">SangRouge</h2>
+			<div class="col-md-6 ">
+				<img src="./public/images/sangrouge-1.png">
 			</div>
-			<div class="col-md-6 project centered">
-				Lorem Ipsum
+			<div class="col-md-6 project-description">
+				<p>SangRouge is a blood collection system - and my first healthcare-related web app! When it comes to the donation process, donors that give blood at multiple organizations often need to manage multiple accounts and fill out duplicative forms. With SangRouge, a donor's profile follows them from organization to organization. This ensures that the donors wait the appropriate amount of time between donations, and that donors only have one account to manage.</p>
+				<p><strong>FEATURES: </strong>Multiple user types, Conditional form validations, Updating navbar logo with the logged-in tech's organization name/logo</p>
+				<p><strong>TECHNOLOGIES: </strong>Ruby on Rails, Bcrypt, PostgreSQL</p>
 			</div>
-			<div class="col-md-6 project centered">
-				Lorem Ipsum
+		</div>
+		<div class="row project" id="cachemon">
+			<h2 class="centered">Cachemon</h2>
+			<div class="col-md-6 ">
+				<img src="./public/images/cachemon-1.png">
 			</div>
-			<div class="col-md-6 project centered">
-				Lorem Ipsum
+			<div class="col-md-6 project-description">
+				<p>Pokémon meets geocaching. Get out and explore San Francisco to locate Pokémon events. A user can view a list of events around the city along with a clue to find a QR code that allows them to catch the Pokémon. You'll have to get around if you want to Cache 'em all!</p>
+				<p><strong>FEATURES: </strong>Admin/basic user types, Anti event-duplication checks</p>
+				<p><strong>TECHNOLOGIES: </strong>Ruby on Rails, Bcrypt, PostgreSQL, Capybara, Google Maps API, GoQR API</p>
+			</div>
+		</div>
+		<div class="row project" id="kon-ju">
+			<h2 class="centered">Kon-ju</h2>
+			<div class="col-md-6 ">
+				<img src="./public/images/kon-ju-1.png">
+			</div>
+			<div class="col-md-6 project-description">
+				<p>As a private French tutor, I have found that my students often struggle with information overload using translation/conjugation websites. Kon-ju aims to help students without overloading them. By only displaying a single tense of verb, the user is able to hone in on only the conjugations that matter to them.</p>
+				<p>Should a verb not exist in the database, the site will look at the structure of the infinitive and provide regular conjugations so a user doesn't need to recreate the wheel.</p>
+				<p><strong>FEATURES: </strong>Built-in regular conjugation logic, List creator </p>
+				<p><strong>TECHNOLOGIES: </strong>Node.js, Express.js, MongoDB</p>
 			</div>
 		</div>
 	</div>
-	<div class="container" id="contact">
+	<div class="container" id="resume">
+		<h1>RÉSUMÉ</h1>
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3 centered">
+				<h2>Downloads:</h2>
+				<a href="./public/files/resume.pdf"><button class="btn btn-primary" id="pdf"><i class="fa fa-arrow-circle-down"></i> .pdf</button></a>
+				<a href="./public/files/resume.docx"></a><button class="btn btn-primary" id="docx"><i class="fa fa-arrow-circle-down"></i> .docx</button>
+			</div>
+		</div>
+	</div>
+	<div class="container" id="about">
+		<h1>ABOUT</h1>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<div class="col-xs-4 col-xs-offset-4"><hr></div>
+				<div class="col-xs-12 centered footer">3 1 2 -- 4 1 5</div>
+			</div>
+		</div>
 	</div>
 </body>
 </html>

@@ -1,3 +1,7 @@
+body {
+	font-family: 'Ubuntu', sans-serif;
+}
+
 .centered {
 	text-align: center;
 }
@@ -5,6 +9,7 @@
 #header {
 	background: url("../images/background.png") no-repeat center center scroll;
 	background-size: cover;
+	background-attachment: fixed;
 	height: 100vh;
 	width: 100vw;
 	color: 	black;
@@ -12,15 +17,21 @@
 	vertical-align: center;
 }
 
-#header h1 {
+h1 {
 	font-family: 'Quicksand', sans-serif;
 	font-size: 128px;
 	font-weight: 300;
+	text-align: center;
 	color: rgba(25,25,25, 0.7);
 }
 
+h2 {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 36px;
+}
+
 #profile-photo {
-	width: 100%;
+	width: 200px;
 	max-width: 200px;
 	border-radius: 100px;
 	border: 5px solid white;
@@ -35,9 +46,26 @@
 }
 
 .project {
-	min-height: 400px;
-	background: rgba(150, 150, 150, 0.7);
+	margin-top: 15px;
 }
+
+.project img {
+	position: relative;
+	top: 0;
+	left: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.project-description {
+	text-align: justify;
+	font-size: 18px;
+}
+
+.project-description strong {
+	font-family: 'Quicksand', sans-serif;
+}
+
 .tagline-body {
 	min-height: 200px;
 	-webkit-transform-style: preserve-3d;
@@ -50,20 +78,58 @@
   transform: translateY(50%);
 }
 
+#resume {
+	background: rgba(10, 10, 10, 0.8);
+	width: 100%;
+	color: white;
+}
+
+#resume h1 {
+	color: white;
+}
+
+#resume button {
+	background-color: #567EA0;
+	border-color: #567EA0;
+	font-size: 18px;
+	margin: 25px;
+	border-radius: 2px;
+}
+
+
+.footer {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 12px;
+	margin-bottom: 20px;
+}
+
 @media (max-width: 768px) {
-	#header h1 {
+	h1 {
 		font-size: 58px;
 	}
+	
 	#profile-photo {
 		max-width: 150px;
 		border-radius: 75px;
 	}
+	
 	.bio {
 		text-align: center;
 	}
+	
+	.tagline-body {
+		min-height: 0;
+		margin-top: 10px;
+	}
+	
 	.tagline {
 		position: relative;
 		top: 0;
+		transform: translateY(0);
+	}
+
+	.project-description {
+		padding-top: 15px;
 	}
 }
 @media(min-width: 769px) {
