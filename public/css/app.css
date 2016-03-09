@@ -3,17 +3,20 @@
 }
 
 #header {
-	background-color: rgba(0, 0, 0, 0.5);
+	background: url("../images/background.png") no-repeat center center scroll;
+	background-size: cover;
 	height: 100vh;
 	width: 100vw;
-	color: white;
-	font-size: 24px;
+	color: 	black;
+	font-size: 18px;
+	vertical-align: center;
 }
 
 #header h1 {
 	font-family: 'Quicksand', sans-serif;
 	font-size: 128px;
 	font-weight: 300;
+	color: rgba(25,25,25, 0.7);
 }
 
 #profile-photo {
@@ -23,8 +26,41 @@
 	border: 5px solid white;
 }
 
+.links {
+	margin-top: 20px;
+}
+
+.project {
+	min-height: 400px;
+	background: rgba(150, 150, 150, 0.7);
+}
+.tagline-body {
+	min-height: 200px;
+	-webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.tagline {
+	position: relative;
+  top: 50%;
+  transform: translateY(50%);
+}
+
 @media (max-width: 768px) {
 	#header h1 {
-		font-size: 64px;
+		font-size: 58px;
+	}
+	#profile-photo {
+		max-width: 150px;
+		border-radius: 75px;
+		margin-bottom: 20px;
+	}
+}
+@media(min-width: 769px) {
+	.bio {
+		position:absolute;
+		top:50%;
+		left:50%;
+		transform:translateX(-50%) translateY(-50%);
 	}
 }
