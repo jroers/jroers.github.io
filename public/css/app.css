@@ -25,6 +25,37 @@ h1 {
 	color: rgba(25,25,25, 0.7);
 }
 
+.header-text {
+	position:absolute;
+	width: 100%;
+	top:50%;
+	left:50%;
+	transform:translateX(-50%) translateY(-50%);
+	color: rgba(25,25,25, 0.7);
+}
+
+#header button {
+	background-color: rgba(25,25,25, 0.7);
+	border-color: rgba(25,25,25, 0.7);
+	border-radius: 2px;
+	font-size: 18px;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.header-bottom {
+	position:absolute;
+	width: 100%;
+	top:90%;
+	left:50%;
+	transform:translateX(-50%);
+	color: rgba(25,25,25, 0.7);
+	font-size: 36px;
+}
+
+.header-bottom a {
+	color: rgba(25,25,25, 0.7);
+}
+
 h2 {
 	font-family: 'Quicksand', sans-serif;
 	font-size: 36px;
@@ -34,7 +65,6 @@ h2 {
 	width: 200px;
 	max-width: 200px;
 	border-radius: 100px;
-	border: 5px solid white;
 }
 
 .links {
@@ -67,7 +97,6 @@ h2 {
 }
 
 .tagline-body {
-	min-height: 200px;
 	-webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
@@ -130,13 +159,5 @@ h2 {
 
 	.project-description {
 		padding-top: 15px;
-	}
-}
-@media(min-width: 769px) {
-	.bio {
-		position:absolute;
-		top:50%;
-		left:50%;
-		transform:translateX(-50%) translateY(-50%);
 	}
 }
